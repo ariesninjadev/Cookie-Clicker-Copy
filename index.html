@@ -185,12 +185,13 @@ var App=typeof App==='undefined'?0:App;
 
 </body>
   <script>
-    document.addEventListener('keydown', function (event) {
-  		if (event.key === ' ' || event.key === 'w') {
-    		document.getElementById('bigCookie').click();
-  		}
+    document.addEventListener('keydown', function(event) {
+  if (event.key === ' ' || event.key === 'W') {
+    event.preventDefault(); // Prevent default behavior of scrolling or input
+    document.getElementById('bigCookie').click();
+  }
+});
 
-    });
 
     function loadCM() {
   		Game.LoadMod('https://cookiemonster-1hq.pages.dev/cookiemonster.js');
