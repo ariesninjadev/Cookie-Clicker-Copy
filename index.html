@@ -71,7 +71,7 @@ var App=typeof App==='undefined'?0:App;
 		<div style="position:relative;display:none;"><div style="width:22px;height:32px;background:url(img/patreon.png);position:absolute;left:0px;top:0px;pointer-events:none;"></div><a class="orangeLink" href="https://www.patreon.com/dashnet" target="_blank" style="padding-left:16px;" id="topbarPatreon">Patreon</a></div>
 		<div style="position:relative;display:none;font-weight:bold;" id="heralds"><div style="position:absolute;top:-4px;width:31px;height:39px;background:url(img/heraldFlag.png);left:50%;margin-left:-15px;pointer-events:none;"></div><div id="heraldsAmount" style="position:relative;z-index:10;text-shadow:0px 1px 0px #000,0px 0px 6px #ff00e4;color:#fff;">-</div></div>
     <div><p>Game ported by AriesNinja. No ads!</p></div>
-    <div><a id="cookieMonster">Cookie Monster Mod</a></div>
+    <div><a id="cookieMonster" href="javascript:loadCM();">Cookie Monster Mod</a></div>
 		<div style="display:none;"><a class="lightblueLink" style="font-weight:bold;" href="https://play.google.com/store/apps/details?id=org.dashnet.cookieclicker" target="_blank" id="topbarMobileCC">Cookie Clicker for Android</a></div>
 		<div style="display:none;"><a class="lightblueLink" style="font-weight:bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
 		<div style="display:none;"><a href="//orteil.dashnet.org/randomgen/" target="_blank" id="topbarRandomgen">RandomGen</a></div>
@@ -197,9 +197,9 @@ var App=typeof App==='undefined'?0:App;
         }
     });
 
-    document.getElementById("cookieMonster").addEventListener('click', function(e) => {
+    function loadCM() {
   		Game.LoadMod('https://cookiemonster-1hq.pages.dev/cookiemonster.js');
-    });
+    };
     
   </script>
 </html>
