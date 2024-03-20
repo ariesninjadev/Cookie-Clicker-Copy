@@ -186,14 +186,7 @@ var App=typeof App==='undefined'?0:App;
 </body>
   <script>
     document.addEventListener('keydown', function (event) {
-        // Check if Ctrl + Shift + F is pressed
-        if (event.ctrlKey && event.shiftKey && event.key === 'F') {
-            pinval = prompt("PIN:");
-            if (u=="1470") {
-              Game.fps = prompt("FPS:")
-            }
-        }
-  		if (event.key === ' ' || event.key === 'W') {
+  		if (event.key === ' ' || event.key === 'w') {
     		document.getElementById('bigCookie').click();
   		}
 
