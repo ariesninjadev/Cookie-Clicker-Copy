@@ -2260,7 +2260,8 @@ Game.Launch=function()
 			Game.bakeryNameL.textContent=name;
 			name=Game.bakeryName.toLowerCase();
 			if (name=='orteil') Game.Win('God complex');
-			if (!App && name.indexOf('saysopensesame',name.length-('saysopensesame').length)>0 && !Game.sesame) Game.OpenSesame();
+			if (!App && name.indexOf('sayswhatthesigma',name.length-('sayswhatthesigma').length)>0 && !Game.sesame) Game.OpenSesame();
+			if (!App && name.indexOf('saysopensesame',name.length-('saysopensesame').length)>0 && !Game.sesame) alert("Well that would ruin the fun, wouldn't it?");
 			Game.recalculateGains=1;
 		}
 		Game.bakeryNamePrompt=function()
