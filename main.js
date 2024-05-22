@@ -2498,7 +2498,7 @@ Game.Launch=function()
 			if (!App) ajax('grab.txt',Game.GrabDataResponse);
 			else App.grabData(function(res){
 				Game.heralds=res?(res.playersN||1):1;
-				Game.heralds=Math.max(0,Math.min(100,Math.ceil(Game.heralds/100*100)/100));
+				Game.heralds = Math.max(0, Math.min(200, Math.ceil(Game.heralds / 100 * 200) / 100));
 				l('heraldsAmount').textContent=Math.floor(Game.heralds);
 			});
 		}
@@ -2574,7 +2574,7 @@ Game.Launch=function()
 					else str+=loc("To benefit from the herald bonus, you need a special upgrade you do not yet own. You will permanently unlock it later in the game.");
 				}
 			}
-			str+='<div class="line"></div><span style="font-size:90%;opacity:0.6;">'+(!App?loc("<b>Heralds</b> are USUALLY people who have donated to Orteils highest Patreon tier, but here the value is permanently 69.<br>Each herald gives everyone +1% CpS.<br>Heralds benefit everyone playing the game, regardless of whether you donated."):loc("Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.",[100,100]))+'</span><div class="line"></div>'+tinyIcon([21,29]);
+			str+='<div class="line"></div><span style="font-size:90%;opacity:0.6;">'+(!App?loc("<b>Heralds</b> are USUALLY people who have donated to Orteils highest Patreon tier, but here the value is permanently 200.<br>Each herald gives everyone +1% CpS.<br>Heralds benefit everyone playing the game, regardless of whether you donated."):loc("Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.",[100,100]))+'</span><div class="line"></div>'+tinyIcon([21,29]);
 			
 			str+='<div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;left:8px;"></div><div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;right:8px;"></div>';
 			
