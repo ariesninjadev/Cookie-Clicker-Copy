@@ -2498,7 +2498,7 @@ Game.Launch=function()
 			if (!App) ajax('grab.txt',Game.GrabDataResponse);
 			else App.grabData(function(res){
 				Game.heralds=res?(res.playersN||1):1;
-				Game.heralds = Math.max(0, Math.min(200, Math.ceil(Game.heralds / 100 * 200) / 100));
+				//Game.heralds = Math.max(0, Math.min(200, Math.ceil(Game.heralds / 100 * 200) / 100));
 				l('heraldsAmount').textContent=Math.floor(Game.heralds);
 			});
 		}
@@ -2514,7 +2514,7 @@ Game.Launch=function()
 				if (typeof r['herald']!=='undefined')
 				{
 					Game.heralds=parseInt(r['herald']);
-					Game.heralds=Math.max(0,Math.min(100,Game.heralds));
+					//Game.heralds=Math.max(0,Math.min(100,Game.heralds));
 				}
 				if (typeof r['grandma']!=='undefined' && r['grandma']!='')
 				{
